@@ -1,0 +1,8 @@
+# Pi number π
+PI = 3.141592653589793
+# Euler (e)
+EULER = 2.718281828459045
+# Golden Ratio φ:
+GOLDEN_RATIO = 1.618033988749899
+# Kaprekar Constant
+KAPREKAR = 6174

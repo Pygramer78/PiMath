@@ -1,13 +1,8 @@
 import coordinates as cd
-
+from random import randint, choice
 
 class Color:
-    def __init__(self, hex: str="#000000", r=0, g=0, b=0):
+    def __init__(self, hex: str="#000000"):
         self.hex = hex
-        self.rgb = (r, g, b)
-    
-    def RGBtoHEX(self):
-        pass
-
-    def HEXtoRGB(self):
-        pass
+    def randomColor():
+        return "#" +''.join([choice('0123456789ABCDEF') for j in range(6)])
