@@ -4,7 +4,7 @@ class Coordinates:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.coordinates = (x, y)
+        self.coordinates = [x, y]
 
     def __repr__(self):
         return f"x: {self.x} \ny: {self.y}"

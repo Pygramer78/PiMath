@@ -18,15 +18,15 @@ def generate_primes(until):
     return primes
 
 def decompose(a):
-    l = generate_primes(n)
+    l = generate_primes(a)
     elements_factor_exponent = {}
     for c in l:
-        while n % c == 0:
+        while a % c == 0:
             if c in elements_factor_exponent:
                 elements_factor_exponent[c] += 1
             else:
                 elements_factor_exponent[c] = 1
-        n = n//c
+        a = a//c
     return elements_factor_exponent
 
 # decompose(8*9*5*11)  # {2: 3, 3: 2, 5: 1, 11: 1}
