@@ -3,7 +3,6 @@ from coordinates import *
 from primes import *
 from roman import *
 from segments import *
-import time as tm
 # Known numbers:
 print(f"pi number: {PI}")
 print(f"euler number: {EULER}")
@@ -29,12 +28,12 @@ prime = 17
 print(is_prime(prime, [2, 3, 5])) # True (means it's prime)
 # The [2, 3, 5] list is another thing which you need to put in there (those are numbers minor than the prime you're checking)
 print(generate_primes(40)) # Will generate prime numbers until the parameter you put (must be int) [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]
-print(decompose(120)) # Will do a factorial decompose with the number you passed (may take a while)
+# print(decompose(120)) # Will do a factorial decompose with the number you passed (may take a while)
 print(mcm(12, 24)) # Returns the answer to the mcm
 print(mcd(12, 24)) # Same as mcm but different operation
 
 
 # Segments (matplotlib)
-segment = Segments([(10, -10), (50, -10)])
+segment = Segments([(10, -10), (50, -10), (0, 10)])
 segment.draw(color=color)
 
