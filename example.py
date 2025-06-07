@@ -1,8 +1,7 @@
 from number import *
-from coordinates import *
+from geometry import *
 from primes import *
 from roman import *
-from segments import *
 # Known numbers:
 print(f"pi number: {PI}")
 print(f"euler number: {EULER}")
