@@ -1,4 +1,4 @@
-import coordinates as cd
+import geometry as gm
 from random import randint, choice
 
 class Color:
