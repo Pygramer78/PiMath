@@ -2,6 +2,7 @@ from number import *
 from geometry import *
 from primes import *
 from roman import *
+from colors import *
 # Known numbers:
 print(f"pi number: {PI}")
 print(f"euler number: {EULER}")
@@ -15,7 +16,8 @@ print(coordenate - p) # Returns another coordinate with the subtraction / adding
 
 # Color
 color = Color("#911B1B")
-
+randomcolor = randomColor() # Creates a random color
+print(randomcolor)
 # Roman:
 roman_Number = Roman("XVII")
 print(roman_Number.RomanToDec()) # 17
