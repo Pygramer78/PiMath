@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
+from turtle import *
 from colors import Color
-
+import time as tm
 class Coordinates:
     def __init__(self, x, y):
         self.x = x
@@ -63,6 +64,18 @@ class Segments:
         for x, y in self.x:
             plt.scatter(x, y, c=color.hex)
         plt.show()
+
+class Rectangles:
+    def __init__(self, alture, base):
+        self.h = alture
+        self.b = base
+
+    def draw(self):
+        home()
+        forward(self.h)
+        left(self.b)
+        tm.sleep(40)
+
 
 """
 def SegToCoor(a: Segments):

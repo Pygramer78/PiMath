@@ -36,5 +36,7 @@ print(mcd(12, 24)) # Same as mcm but different operation
 
 # Segments (matplotlib)
 segment = Segments([(10, -10), (50, -10), (0, 10)])
-segment.draw(color=color)
+#segment.draw(color=color)
 
+rectangle = Rectangles(12, 24)
+rectangle.draw()
