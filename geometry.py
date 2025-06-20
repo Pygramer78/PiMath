@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from turtle import *
 from colors import Color
+from number import PI
 import time as tm
 class Coordinates:
     def __init__(self, x, y):
@@ -70,21 +71,65 @@ class Rectangles:
         self.h = alture
         self.b = base
 
-    def draw(self):
-        home()
-        forward(self.h)
-        left(self.b)
-        tm.sleep(40)
+    def __repr__(self):
+        return f"Alture (h): {self.h} \nBase (b): {self.b}"
+    
+    def area(self):
+        return self.h * self.b
+    
+    def perimeter(self):
+        return self.h*2 + self.b*2
 
 
-"""
-def SegToCoor(a: Segments):
-    s = 0
-    s2 = 0
-    result = cp.Coordinates(s, s2)
-    for x, y in a.x:
-        s = x
-        s2 = y
-    return result
-# Still in development
-"""
+class Square:
+    def __init__(self, sidelen):
+        self.sidelen = sidelen
+    
+    def __repr__(self):
+        return f"Side lenght: {self.sidelen}"
+
+    def area(self):
+        return self.sidelen**2
+
+    def perimeter(self):
+        return self.sidelen*4
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+        self.diameter = radius * 2
+    
+    def __repr__(self):
+        return f"Radius: {self.radius}\nDiameter: {self.diameter}"
+    
+    def area(self):
+        return self.radius**2 / PI
+
+class Trapeze:
+    def __init__(self, BigD, Smalld, Alture):
+        self.bd = BigD
+        self.sd = Smalld
+        self.h = Alture
+    
+    def __repr__(self):
+        return f"Alture: {self.h}\nBig Diagonal: {self.bd}\nSmall Diagonal: {self.sd}"
+    
+    def area(self):
+        return (self.bd + self.sd)*self.h / 2
+    
+    def perimeter(self):
+        return "In development."
+    
+class Triangle:
+    def __init__(self, alture, base):
+        self.h = alture
+        self.b = base
+    
+    def __repr__(self):
+        return f"Alture: {self.h}\nBase: {self.b}"
+    
+    def area(self):
+        return self.h*self.b / 2
+    
+    def perimeter(self):
+        return "Development."
