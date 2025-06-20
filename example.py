@@ -1,8 +1,8 @@
-from number import *
-from geometry import *
-from primes import *
-from roman import *
-from colors import *
+from PiMath.number import *
+from PiMath.geometry import *
+from PiMath.primes import *
+from PiMath.roman import *
+from PiMath.colors import *
 # Known numbers:
 print(f"pi number: {PI}")
 print(f"euler number: {EULER}")
