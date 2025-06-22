@@ -39,4 +39,9 @@ segment = Segments([(10, -10), (50, -10), (0, 10)])
 #segment.draw(color=color)
 
 rectangle = Rectangles(12, 24)
-rectangle.draw()
+print(rectangle.perimeter())
+print(rectangle.area())
+dodecagon = Dodecagon(65, 18)
+print(dodecagon.area())
+print(dodecagon.perimeter())
+# All the others (Hexagon, Heptagon, Octogon...) do exist

@@ -108,7 +108,7 @@ class Circle:
         return f"Radius: {self.radius}\nDiameter: {self.diameter}"
     
     def area(self):
-        return self.radius**2 / PI
+        return self.radius**2 * PI / 2
 
 class Trapeze:
     def __init__(self, BigD, Smalld, Alture):
