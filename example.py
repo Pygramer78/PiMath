@@ -45,3 +45,8 @@ dodecagon = Dodecagon(65, 18)
 print(dodecagon.area())
 print(dodecagon.perimeter())
 # All the others (Hexagon, Heptagon, Octogon...) do exist
+"""
+Hey! You can also try my java library.
+It's the same but with java.
+But it is still in development.
+"""
