@@ -6,7 +6,7 @@ import time as tm
 from math import sqrt
 
 def pythagorean_theorem(c1, c2):
-    return sqrt(c1*2 + c2*2)
+    return sqrt(c1**2 + c2**2)
 
 class Coordinates:
     def __init__(self, x, y):
@@ -61,15 +61,23 @@ class Coordinates:
         else:
             return "Parameters Missing"
         
-
-class Segments:
-    def __init__(self, x: list):
-        self.x = x
-    
-    def draw(self, color: Color="#000000"):
-        for x, y in self.x:
+    def draw(self, other, color:Color="#000000", color2:Color="#000000"):
+        for x, y in self.coordinates:
             plt.scatter(x, y, c=color.hex)
-        plt.show()
+        for x, y in other.coordinates:
+            plt.scatter(x, y, c=color2.hex)
+        plt.show
+    
+    def length(self, other):
+        dx = self.x - other.x
+        dy = self.y - other.y
+        return (dx**2 + dy**2) ** 0.5
+
+    def midpoint(self, other):
+        mx = (self.x + other.x) / 2
+        my = (self.y + self.y) / 2
+        return Coordinates(mx, my)
+
 
 class Rectangles:
     def __init__(self, alture, base):

@@ -35,8 +35,8 @@ print(mcd(12, 24)) # Same as mcm but different operation
 
 
 # Segments (matplotlib)
-segment = Segments([(10, -10), (50, -10), (0, 10)])
-#segment.draw(color=color)
+segment = Coordinates(40, 20)
+segment.draw(color="#ff30ff", color2="#30ff00")
 
 rectangle = Rectangles(12, 24)
 print(rectangle.perimeter())
@@ -45,8 +45,3 @@ dodecagon = Dodecagon(65, 18)
 print(dodecagon.area())
 print(dodecagon.perimeter())
 # All the others (Hexagon, Heptagon, Octogon...) do exist
-"""
-Hey! You can also try my java library.
-It's the same but with java.
-But it is still in development.
-"""
